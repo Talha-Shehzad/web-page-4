@@ -1,0 +1,244 @@
+body {
+  background-color: #ccc;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.6em;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+.clearFix {
+  clear: both;
+}
+#mainHeader {
+  background-color: #333333;
+  color: #396cf9;
+}
+#mainHeader h1:hover {
+  color: #ff652f;
+}
+#mainNav {
+  background-color: #ccc;
+  color: black;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0%;
+}
+#mainNav ul {
+  padding: 0%;
+  margin: 0%;
+  list-style: nono;
+}
+#mainNav li {
+  display: inline;
+  padding: 5px 10px;
+}
+#mainNav a {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+}
+#mainNav li:hover {
+  background-color: #aaa;
+}
+#jumbo {
+  background-image: url("../image/bl.jpg");
+  background-position: center center;
+  min-height: 200px;
+  border-bottom: 10px solid #ccc;
+  text-align: center;
+}
+#jumbo h1 {
+  color: white;
+  font-size: 45px;
+  padding-top: 30px;
+  line-height: 1.6em;
+}
+#main {
+  float: right;
+  width: 70%;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+#sidBar {
+  float: left;
+  width: 30%;
+  padding: 10px;
+  border-right: 1px solid#333333;
+  box-sizing: border-box;
+}
+#mainFooter {
+  background-color: #333333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+}
+#pExample {
+  background-color: #ff652f;
+  position: relative;
+  border: 2px solid #333333;
+  width: 400px;
+  color: #fff;
+  height: 400px;
+}
+#pExample span:first-child {
+  position: absolute;
+  bottom: 20px;
+  right: 100px;
+}
+#pExample span:last-child {
+  position: absolute;
+  top: 100px;
+  left: 30px;
+}
+#fix {
+  position: fixed;
+  bottom: 0%;
+  right: 50px;
+  background: #ff652f;
+  padding: 5px;
+}
+#seperator {
+  background-color: red;
+  border: 2px solid red;
+}
+.br {
+  text-align: center;
+}
+#flexboxArea {
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+}
+#whitBox {
+  background-color: #fff;
+  text-align: center;
+}
+#whitBox h1 {
+  margin: 0px;
+  padding: 100px;
+  border: solid 2px #000;
+  color: black;
+}
+
+#newBox {
+  background-color: orchid;
+  border: 3px solid rgb(55, 232, 194);
+}
+
+.flexbox-container {
+  display: flex;
+  height: 95vh;
+  /* height: 95vh;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-direction: column;
+    flex-wrap: wrap; */
+  /* flex-flow: column wrap; */
+  /* flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    height: 95vh; */
+}
+.flexbox-item {
+  /* width: 25%; */
+  background-color: #ff652f;
+  border: 3px solid #ccc;
+  color: #ffff;
+  font-size: 2em;
+  padding: 20px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-basis: 15%; */
+}
+.item-1 {
+  min-height: 50px;
+  /* flex-grow: 1;
+    flex-shrink: 1; */
+  flex: 1 1 15%;
+  align-self: center;
+}
+.item-2 {
+  min-height: 100px;
+  /* flex-grow: 4;
+    flex-shrink: 4; */
+  flex: 1 1 25%;
+  align-self: flex-end;
+}
+.item-3 {
+  min-height: 250px;
+  /* flex-grow: 1;
+    flex-shrink: 1; */
+  flex: 5 5 25%;
+  align-self: flex-start;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.column {
+  flex: 25%;
+}
+.column img {
+  padding-right: 4px;
+  width: 100%;
+  vertical-align: middle;
+}
+.header {
+  text-align: center;
+}
+
+.Grid h1 {
+  padding: 10px;
+  margin: 0;
+
+  border: #ff652f solid 4px;
+  background-color: #000;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .column {
+    flex: 50%;
+  }
+}
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  #main,
+  #sidBar {
+    width: 100%;
+    float: none;
+    border: none;
+  }
+}
+/* p {
+    border-top: 5px solid blue;
+    border-right: 2px dotted green;
+    border-bottom: 5px dashed red;
+    border-left: 2px dotted green;
+    border: 3px solid green;
+    padding-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding: 20px;
+    padding: 10px 20px 10px 20px;
+    padding: 20px;
+    margin-top: 40px;
+} */
